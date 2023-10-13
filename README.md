@@ -58,6 +58,66 @@ Error At : Initializing local repository
 
 `git remote set-url origin https://github.com/username/repository.git`
 
-    
+### Cloning a existing repository
+
+`Git clone  https://github.com/username/repository-name.git`
+: By using above command a new repository can be cloned to local environment 
+
+### Creating branch
+
+Branches are forked repositories where development  is done by individual developer before incorporating the changes to upstream repository  
+
+`Git branch branch_name`
+: By using this command you can create a new branch locally  
+
+`Git checkout branch_name`
+: By using this command git will switch to that branch and it will show as current branch any changes committed will be for this branch only
+
+### Checking status
+
+Any changes made to code base will create new changes in local repository changes made can be seen by command  
+
+`Git status`
+: This will show file name in which changes are created shown in red also any changes finalized will show in green which are ready to be committed
+
+### Staging changes to commit
+
+Any changes made in codebase needs to be committed or removed from the git repository before updating it with remote repository  
+
+`Git add <file>`
+: This will add all changes made in specific file to staging  
+
+`Git restore <file>`
+: This will discard changes made in specific file  
+
+`Git add .`
+: This will add all changes made to repository to staging   
+
+### Gitignore
+
+*gitignore* is a file located in folder structure which specifies intentionally untracked files that git should ignore. Once a file added in *gitignore* any changes made to it will not show up in git status command. Files such as config, env variables or large files are added in *gitignore*
+
+### Creating a local commit
+
+In order to push local changes to remote repository committing changes is necessary which then can be pushed to remote repository  
+
+`Git commit -m “name of the  commit”`
+: This command will create new commit with all the staged changes, -m flag will be used to add commit message
+
+### Pushing commits to remote
+All changes done are only on local machine only pushing them to remote repository is necessary  
+
+`Git push origin branch_name`
+: This command will push any changes created to remote git repository branch of the same name  
+
+### Pull request
+You can pull commits from any branch using pull request and used to be up to date with other developers code  
+
+`Git pull origin branch_name`
+: Pull codebase on branch_name to owners branch
+
+
+
+
 
 
